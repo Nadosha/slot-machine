@@ -1,0 +1,32 @@
+<template name="slotMachine">
+    <div class="container">
+        <div class="row">
+            <div class="slot-machine">
+                {{> userStat}}
+
+                {{#if credits}}
+                <img src="{{machinePosition}}" class="img-responsive"/>
+                <div class="slot-field">
+                    <div id="slot1" class="slot">
+                        <img src="{{slotimage.slot1}}" class="img-responsive">
+                    </div>
+                    <div id="slot2" class="slot">
+                        <img src="{{slotimage.slot2}}" class="img-responsive">
+                    </div>
+                    <div id="slot3" class="slot">
+                        <img src="{{slotimage.slot3}}" class="img-responsive">
+                    </div>
+                </div>
+                <div class="lever spinStart"></div>
+                {{else}}
+                    <div style="margin: 0 auto">
+                        <img src="/img/looser.gif" style="width: 500px">
+                    </div>
+                    <div class="input-group" id="email-input">
+                        <button class="funbtn funbtn-yellow funbtn-block funbtn-big" id="addCredits" type="button" style="'margin-top: 10px">Get credits</button>
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

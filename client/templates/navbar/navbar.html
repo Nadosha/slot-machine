@@ -1,0 +1,26 @@
+<template name="navBar">
+    <nav class="navbar navbar-yellow">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-adaptive" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <a class="navbar-brand" href="{{pathFor route='home'}}" style="margin-top: -10px">
+                    <h2>Casin<i class="fa fa-smile-o " aria-hidden="true"></i></h2>
+                </a>
+                <h5 style="display: inline-block; line-height: 60px; margin: 0">{{user.first}} {{user.last}}</h5>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="nav-adaptive">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{pathFor route='home'}}" class="navbar-btn">Game</a></li>
+                    <li><a href="{{pathFor route='userProfile'}}" class="navbar-btn">My profile</a></li>
+                    <li><a herf='#' class="navbar-btn"  id="logout" style="cursor: pointer">Logout</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</template>

@@ -1,0 +1,63 @@
+.slot-machine {
+  width: 600px;
+  height: 600px;
+  margin: 20px auto;
+}
+
+.slot-field {
+  position: relative;
+  top: -272px;
+  left: 55px;
+}
+
+.slot {
+  width: 119px;
+  height:148px;
+  display: inline;
+  float: left;
+  padding: 30px 20px;
+  border:1px solid #bdc3c7;
+  background: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.lever {
+  cursor: pointer;
+  &.spinStart {
+    position: relative;
+    height: 180px;
+    width: 40px;
+    top: -390px;
+    left: 480px;
+  }
+  &.spinStop {
+    position: relative;
+    height: 180px;
+    width: 40px;
+    top: -200px;
+    left: 480px;
+  }
+}
+
+
+.userStat {
+  padding: 10px;
+  color: white;
+  border: 5px dotted #f1c40f;
+
+  * {
+    display: inline-block;
+  }
+  .userInfo {
+    float: left;
+  }
+  .score {
+    float: right;
+  }
+}
+
+.coin {
+  height: 50px;
+  width: 50px;
+}
