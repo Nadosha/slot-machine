@@ -13,7 +13,7 @@
 
 - Install MeteorJS `curl https://install.meteor.com/ | sh`
 - Install npm dependencies `meteor npm install --save`
-- Run project `meteor start`
+- Run project `meteor run`
 
 ### Features:
 
